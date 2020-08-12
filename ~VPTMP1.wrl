@@ -1,0 +1,161 @@
+#VRML V2.0 utf8
+Transform{
+scale 0.1 0.1 0.1
+children[
+Transform{
+translation	0 32 0
+rotation 0 1 0 1.57
+children[
+Inline{
+url["E:\VRML\BTL ver 2\BTL\cau.wrl"]
+}
+]
+}
+Transform{
+children[
+Inline{
+url["E:\VRML\BTL ver 2\DayVang\dayvangbase.wrl"]
+}
+]
+}
+
+Transform{
+translation	0 0 0
+rotation 0 0 1 0
+children[
+Inline{
+url["E:\VRML\BTL ver 2\ChanCau.wrl"]
+}
+]
+}
+Transform{
+translation	0 0 500
+rotation 0 0 1 0
+children[
+Inline{
+url["E:\VRML\BTL ver 2\ChanCau.wrl"]
+}
+]
+}
+Transform{
+translation	0 0 1000
+rotation 0 0 1 0
+children[
+Inline{
+url["E:\VRML\BTL ver 2\ChanCau.wrl"]
+}
+]
+}
+Transform{
+translation	0 0 -500
+rotation 0 0 1 0
+children[
+Inline{
+url["E:\VRML\BTL ver 2\ChanCau.wrl"]
+}
+]
+}
+Transform{
+translation	0 0 -1000
+rotation 0 0 1 0
+children[
+Inline{
+url["E:\VRML\BTL ver 2\ChanCau.wrl"]
+}
+]
+}
+
+
+
+Transform{
+translation	1.5 35.5 0
+rotation 0 1 0 1.57
+scale 1 1 1
+children[
+Inline{
+url["E:\VRML\BTL ver 2\BTL\xetaichay.wrl"]
+}
+]
+}
+Transform{
+translation	5.5 35.5 -10
+rotation 0 1 0 1.57
+scale 1 1 1
+children[
+Inline{
+url["E:\VRML\BTL ver 2\BTL\xetaichay.wrl"]
+}
+]
+}
+Transform{
+translation	9.5 35.5 -15
+rotation 0 1 0 1.57
+scale 1 1 1
+children[
+Inline{
+url["E:\VRML\BTL ver 2\BTL\xetaichay.wrl"]
+}
+]
+}
+
+Transform{
+translation	12.5 35.5 0
+rotation 0 1 0 1.57
+scale 0.3 0.3 0.3
+children[
+Inline{
+url["E:\VRML\BTL ver 2\Phuongtien\Xemaychay.wrl"]
+}
+]
+}
+Transform{
+translation	13.5 35.5 -10
+rotation 0 1 0 1.57
+scale 0.3 0.3 0.3
+children[
+Inline{
+url["E:\VRML\BTL ver 2\Phuongtien\Xemaychay.wrl"]
+}
+]
+}
+Transform{
+translation	12.5 35.5 -15
+rotation 0 1 0 1.57
+scale 0.3 0.3 0.3
+children[
+Inline{
+url["E:\VRML\BTL ver 2\Phuongtien\Xemaychay.wrl"]
+}
+]
+}
+]
+}
+Viewpoint{
+description	"Viewpoint 1"
+fieldOfView	0.785398
+jump TRUE
+orientation	0 0 1 0
+position 0 50 150
+}
+Viewpoint{
+description	"Viewpoint 2"
+fieldOfView	0.785398
+jump TRUE
+orientation	0 1 0 1
+position 200 50 25
+}
+Viewpoint{
+description	"Viewpoint 3"
+fieldOfView	0.785398
+jump TRUE
+orientation	1 0 0 0
+position 0 40 20
+}
+Viewpoint{
+description	"Viewpoint 4"
+fieldOfView	0.785398
+jump TRUE
+orientation	0 1 0 1.57
+position 1500 50 25
+}
+
