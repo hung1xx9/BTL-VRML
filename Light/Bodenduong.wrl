@@ -1,0 +1,313 @@
+#VRML V2.0 utf8
+DEF	den
+Transform {
+	translation	0 0 0
+	rotation 0 0 1 0
+	scale 1 1 1
+	children [
+		DEF	denden
+		Transform {
+			translation	-31.25 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	62.5 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-52.05 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	104.1 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-72.85 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	145.7 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-93.65 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	187.3 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-114.45 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	228.9 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-135.25 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	270.5 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-156.05 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	312.1 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-176.85 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	353.7 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-197.65 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	395.3 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-218.45 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	436.9 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-239.25 0 0
+			rotation 0 0 1 0
+			children [
+				Transform {
+					translation	0 2 0
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+				Transform {
+					translation	478.5 2 0
+					rotation 0 1 0 3.14
+					children [
+						Inline {
+							url	["E:\VRML\BTL ver 2\Light\Light.wrl"]
+						}
+					]
+				}
+			]
+		}
+		DEF	touch
+		TouchSensor	{
+			enabled	TRUE
+		}
+		DEF congtac Script {
+
+			eventIn SFBool turnOn
+
+			eventOut SFBool On
+
+			eventOut SFBool Off
+
+			field SFBool turn FALSE
+
+			url "javascript:
+
+			function turnOn(val)
+			{
+
+				if(val){
+
+    				turn = !turn;
+
+    				if(turn)
+
+    				{    On= TRUE; Off=FALSE;  }
+
+            		else
+
+            		{  On=FALSE; Off=TRUE;  }
+
+        		}
+
+    		}
+
+    		"
+
+		}
+	]
+}
+ROUTE touch.isActive TO	congtac.turnOn

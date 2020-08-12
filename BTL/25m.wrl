@@ -1,0 +1,21 @@
+#VRML V2.0 utf8
+
+DEF lancangiua Transform {
+	translation	0 1.825 0
+	children [
+		Inline {url ["E:\VRML\BTL ver 2\BTL\lancan.wrl"]}
+	]
+}
+DEF duongphai Transform {
+	translation	0 0 8
+	children [
+		Inline {url ["E:\VRML\BTL ver 2\BTL\lanphai.wrl"]}
+	]
+}
+DEF duongtrai Transform {
+	rotation 0 1 0 3.14
+	translation	0 0 -8
+	children [
+		Inline {url ["E:\VRML\BTL ver 2\BTL\lanphai.wrl"]}
+	]
+}

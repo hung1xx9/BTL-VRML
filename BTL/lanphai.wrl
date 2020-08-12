@@ -1,0 +1,88 @@
+#VRML V2.0 utf8
+DEF	lanphai Transform {
+	children [
+		DEF	lan Transform{
+			children [
+				Shape {
+					geometry Box {size 25 3.5 16}
+					appearance Appearance {
+						material DEF mauduong Material {
+							diffuseColor .45 .45 .45
+							specularColor .5 .5 .5
+							emissiveColor .15 .15 .15
+							ambientIntensity 0
+						}
+					}
+				}
+				Transform {
+					translation	0 0 4
+					children [
+						DEF	vachlien Transform {
+							translation	0 1.755 0
+							children [
+								Shape {
+								geometry Box {size 25 0.01 0.2}
+								}
+							]
+						}
+					]
+				}
+				DEF dut Transform {
+					children [
+						DEF	vachdut Transform {
+							translation	0 1.755 0
+							children [
+								Shape {
+								geometry Box {size 2 0.01 0.2}
+								}
+							]
+						}
+						Transform {
+								translation	4.5 0 0
+								children [USE vachdut ]
+							}
+							Transform {
+								translation	9 0 0
+								children [USE vachdut ]
+							}
+							Transform {
+								translation	-4.5 0 0
+								children [USE vachdut ]
+							}
+							Transform {
+								translation	-9 0 0
+								children [USE vachdut ]
+							}
+					]
+				}
+				Transform {
+					translation	0 0 -4
+					children [USE dut ]
+				}
+				
+			]
+		}
+		DEF viahe Transform{
+			translation	0 0.125 8.75
+			children [
+				Shape {
+					geometry Box {size 25 4 1.5}
+					appearance Appearance {
+						material Material {
+							diffuseColor .804 .824 .8
+							ambientIntensity 0
+							shininess .184
+						}
+						
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 2.25 9.5
+			children [
+				Inline {url ["E:\VRML\BTL ver 2\BTL\lancan.wrl"]}
+			]
+		}
+	]
+}

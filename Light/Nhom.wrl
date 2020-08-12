@@ -1,0 +1,105 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 0
+	rotation 0 0 1 0
+	children [
+		Transform {
+			translation	0 0 100
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 200
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 300
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 400
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 500
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+	]
+}
+DEF	nhom
+Transform {
+	translation	0 0 0
+	rotation 0 1 0 0
+	children [
+		Transform {
+			translation	0 0 -100
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -200
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -300
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -400
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 -500
+			rotation 0 0 1 0
+			children [	
+				Inline {
+					url	["E:\VRML\BTL ver 2\Light\Denduong.wrl"]
+				}
+			]
+		}
+	]
+}

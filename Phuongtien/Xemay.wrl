@@ -1,0 +1,519 @@
+#VRML V2.0 utf8
+
+#Banh xe
+DEF	banhxe
+Transform {
+	translation	0 0 0
+	rotation 0 0 1 0
+	children [	 
+		Group {
+			children [
+				Transform {
+					translation	0 0 -.2
+					rotation 0 0 1 0
+					children [	  
+						Shape {
+							appearance DEF maubanhxe Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+							geometry Extrusion {
+								beginCap FALSE
+								endCap FALSE		
+								crossSection [
+									0 0  0.6 0  0.6  0.6  0 0.6 
+								]
+								spine [
+									0.365757703	0.930710107	0
+									0.177157237	0.984182561	0
+									-0.018251282	0.999833431	0
+									-0.212958415	0.977061264	0
+									-0.399481676	0.91674118	0
+									-0.570653079	0.821191246	0
+									-0.719894605	0.694083394	0
+									-0.841470985	0.540302306	0
+									-0.930710107	0.365757703	0
+									-0.984182561	0.177157237	0
+									-0.999833431	-0.018251282	0
+									-0.977061264	-0.212958415	0
+									-0.91674118	-0.399481676	0
+									-0.821191246	-0.570653079	0
+									-0.694083394	-0.719894605	0
+									-0.540302306	-0.841470985	0
+									-0.365757703	-0.930710107	0
+									-0.177157237	-0.984182561	0
+									0.018251282	-0.999833431	0
+									0.212958415	-0.977061264	0
+									0.399481676	-0.91674118	0
+									0.570653079	-0.821191246	0
+									0.719894605	-0.694083394	0
+									0.841470985	-0.540302306	0
+									0.930710107	-0.365757703	0
+									0.984182561	-0.177157237	0
+									0.999833431	0.018251282	0
+									0.977061264	0.212958415	0
+									0.91674118	0.399481676	0
+									0.821191246	0.570653079	0
+									0.694083394	0.719894605	0
+									0.540302306	0.841470985	0
+									0.365757703	0.930710107	0
+									0.177157237	0.984182561	0
+								]
+								solid FALSE
+								scale 0.6 0.6
+							}
+						}
+					]
+				}
+				Transform {
+					translation	0 0 0
+					rotation 1 0 0 1.57
+					children [
+						Shape {
+							appearance USE maubanhxe
+							geometry Cylinder {
+								bottom TRUE
+								top	TRUE
+								height 0.3
+								radius 0.3
+								side TRUE
+							}
+						}
+						Shape {
+							appearance USE maubanhxe
+							geometry Cylinder {
+								bottom TRUE
+								top	TRUE
+								height 0.7
+								radius 0.1
+								side TRUE
+							}
+						}
+					]
+				}
+				Transform {
+					translation 0 0 0
+					rotation	0 0 1 0
+					children	[
+						DEF	nanhoa
+						Shape {
+							appearance USE maubanhxe
+							geometry Cylinder {
+								bottom TRUE
+								top	TRUE
+								height 2
+								radius 0.05
+								side TRUE
+							}
+						}
+					]
+				}
+				Transform {
+					translation	0 0 0
+					rotation 0 0 1 1.047
+					children [
+						USE	nanhoa
+					]
+				}
+				Transform {
+					translation	0 0 0
+					rotation 0 0 1 2.094
+					children [
+						USE	nanhoa
+					]
+				}
+			]}
+		
+		DEF	time_banhxe
+		TimeSensor {
+			cycleInterval 1
+			enabled	TRUE
+			loop TRUE
+		}
+		DEF	touch_banhxe
+		TouchSensor	{
+			enabled	TRUE
+		}
+		DEF	dichuyen
+		PositionInterpolator {
+			key	[]
+			keyValue []
+		}
+		DEF	quay
+		OrientationInterpolator	{
+			key	[0 0.5 1]
+			keyValue [0 0 1 0,0 0 1 -3.14,0 0 1 -6.28]
+		}
+	]
+}
+Transform {
+	translation	6 0 0
+	rotation 0 0 1 0
+	children [USE banhxe ]
+}
+
+
+Transform {
+	translation	-0.25 -0.15 0
+	rotation 1 0 0 1.57
+	scale 2.3 0.3 1
+	children [
+		Transform {
+			translation	0 0 0
+			rotation 0 1 0 3.14
+			children [
+				Shape {
+					appearance DEF gamxe Appearance {
+						material Material {
+							diffuseColor .15 .15 .15
+							specularColor .92 .91 .89
+							ambientIntensity 0
+							shininess .06
+						}
+					}
+					geometry Extrusion {
+						beginCap TRUE
+						endCap TRUE
+						solid FALSE
+						crossSection [
+							0 0  0.2 0  0.2  0.2  0 0.2
+						]
+						spine [
+							-0.018251282	0.999833431	0
+							-0.212958415	0.977061264	0
+							-0.399481676	0.91674118	0
+							-0.570653079	0.821191246	0
+							-0.719894605	0.694083394	0
+							-0.841470985	0.540302306	0
+							-0.930710107	0.365757703	0
+							-0.984182561	0.177157237	0
+							-0.999833431	-0.018251282	0
+							-0.977061264	-0.212958415	0
+							-0.91674118	-0.399481676	0
+							-0.821191246	-0.570653079	0
+							-0.694083394	-0.719894605	0
+							-0.540302306	-0.841470985	0
+							-0.365757703	-0.930710107	0
+							-0.177157237	-0.984182561	0
+							0.018251282	-0.999833431	0  
+						]											 
+						scale 1.7 1.7
+
+					}
+				}
+			]
+		}
+	]
+}
+
+Transform {
+	translation	2.7 0.35 0
+	rotation 0 0 1 0
+	children [
+		Shape {
+			appearance USE gamxe
+			geometry Box {
+				size 2.5 1 0.6
+			}
+		}
+	]
+}
+Transform {
+	translation	0.05 0.55 -.2
+	rotation 0 0 1 -1.57
+	scale 1 1.4 1
+	children [	   
+		Shape {
+			appearance USE gamxe
+			geometry Extrusion {
+				crossSection [
+					0 0  0.025 0  0.025  0.2  0 0.2	
+				]
+				spine [
+					#					-0.018251282	0.999833431	0
+					-0.212958415	0.977061264	0
+					-0.399481676	0.91674118	0
+					-0.570653079	0.821191246	0
+					-0.719894605	0.694083394	0
+					-0.841470985	0.540302306	0
+					-0.930710107	0.365757703	0
+					-0.984182561	0.177157237	0
+					-0.999833431	-0.018251282	0
+					-0.977061264	-0.212958415	0
+					-0.91674118	-0.399481676	0
+					-0.821191246	-0.570653079	0
+					-0.694083394	-0.719894605	0
+					-0.540302306	-0.841470985	0
+					-0.365757703	-0.930710107	0
+					-0.177157237	-0.984182561	0
+					#					0.018251282	-0.999833431	0  
+				]											 
+				scale 2 2
+				solid FALSE
+			}
+		}
+	]
+}
+Transform {
+	translation	5.9 0.55 -.2
+	rotation 0 0 1 -1.57
+	scale 1 1.4 1
+	children [
+		Shape {
+			appearance USE gamxe
+			geometry Extrusion {
+				crossSection [
+					0 0  0.025 0  0.025  0.2  0 0.2	
+				]
+				spine [
+					#					-0.018251282	0.999833431	0
+					#					-0.212958415	0.977061264	0
+					#					-0.399481676	0.91674118	0
+					-0.570653079	0.821191246	0
+					-0.719894605	0.694083394	0
+					-0.841470985	0.540302306	0
+					-0.930710107	0.365757703	0
+					-0.984182561	0.177157237	0
+					-0.999833431	-0.018251282	0
+					-0.977061264	-0.212958415	0
+					-0.91674118	-0.399481676	0
+					-0.821191246	-0.570653079	0
+					-0.694083394	-0.719894605	0
+					-0.540302306	-0.841470985	0
+					-0.365757703	-0.930710107	0
+					-0.177157237	-0.984182561	0
+					0.018251282	-0.999833431	0  
+				]											 
+				scale 2 2
+				solid FALSE
+			}
+		}
+	]
+
+}
+
+#thụt
+Transform {
+	translation	5.5 1.2 0.35
+	rotation 0 0 1 0.4
+	scale 1 1 1
+	children [
+		DEF	thut
+		Shape {
+			appearance DEF taylai Appearance {
+				material Material {
+					diffuseColor .5 .35 .07
+					specularColor .82 .93 .81
+					ambientIntensity .06
+					shininess .07
+				}
+			}
+			geometry Cylinder {
+				bottom TRUE
+				height 3
+				radius 0.1
+				side TRUE
+				top	TRUE
+			}
+		}
+	]
+}
+Transform {
+	translation	5.5 1.2 -0.35
+	rotation 0 0 1 0.4
+	scale 1 1 1
+	children [
+		USE	thut
+	]
+}
+Transform {
+	translation	4.5 1.2 0.25
+	rotation 0 0 1 -0.4
+	scale 0.8 1 0.8
+	children [
+		USE	thut
+	]
+}
+Transform {
+	translation	4.5 1.2 -0.25
+	rotation 0 0 1 -0.4
+	scale 0.8 1 0.8
+	children [
+		USE	thut
+	]
+}
+Transform {
+	translation	4.95 2.5 0
+	rotation 1 0 0 1.57
+	scale 1 1 1
+	children [
+		Shape {
+			appearance USE taylai
+			geometry	Cylinder {
+				bottom TRUE
+				height 2
+				radius 0.15
+				side	TRUE
+				top TRUE
+			}
+		}
+	]
+}
+
+#Binh xang
+Transform {
+	translation	3.5 1.2 0
+	rotation 0 0 1 0
+	scale 1.2 0.7 0.8
+	children [
+		Shape {
+			appearance USE gamxe
+			geometry Sphere
+			{
+				radius 1
+			}
+		}
+	]
+}
+Transform {
+	translation	3.7 -.17 0
+	rotation 0 0 1 0
+	scale 1 1 1
+	children [
+		Shape {
+			appearance USE taylai
+			geometry	Box
+			{
+				size 0.7 0.05 1.5
+			}
+		}
+	]
+}
+
+
+#hộp đèn
+Transform {
+	translation	5.2 2.4 0
+	rotation 0 0 1 1.57
+	scale 0.4 0.4 0.4
+	children [
+		Shape {
+			appearance USE taylai
+			geometry Cylinder {
+				bottom TRUE
+				height 1
+				radius 1
+				side TRUE
+				top	TRUE
+			}
+		}
+	]
+}
+Transform {
+   translation	5.4 2.4 0
+	rotation 0 0 1 1.57
+	scale 0.3 0.1 0.3
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .05 .46 .73
+					specularColor 1 1 1
+					emissiveColor .03 .04 .2
+					ambientIntensity 0
+					shininess .31
+					transparency .59
+				}
+			}
+			geometry Cylinder {
+				bottom TRUE
+				height 1
+				radius 1
+				side TRUE
+				top	TRUE
+			}
+		}
+	]
+}
+
+Transform {
+	translation	4.85 2.4 -1.2
+	rotation 1 -1 -1 1.6
+	scale 0.1 0.5 0.1
+	children [
+		DEF	taylaiaa		  
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .15 .15 .15
+					specularColor .5 .5 .5
+					emissiveColor .14 .14 .14
+					ambientIntensity 0
+				}
+			}
+			geometry Cylinder {
+				bottom TRUE
+				height 2
+				radius 1
+				side TRUE
+				top	TRUE
+			}
+		}
+	]
+}
+
+Transform {
+	translation	4.85 2.4 1.2
+	rotation -1 1 -1 1.6
+	scale 0.1 0.5 0.1
+	children [USE taylaiaa ]
+}
+
+#yên xe
+Transform {
+	translation	2 1 0
+	rotation 0 0 1 0
+	scale 0.6 0.5 0.4
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .396 .188 .239
+					emissiveColor .09 .04 .07
+					ambientIntensity 0
+					shininess 0
+				}
+			}
+			geometry Cylinder {
+				bottom TRUE
+				height 0.5
+				radius 1
+				side TRUE
+				top	TRUE
+			}
+		}
+	]
+}
+
+Transform {
+	translation	1.25 1.2 0
+	rotation 0 0 1 0.5
+	scale 1 1 1
+	children [
+		Shape {
+			appearance USE gamxe
+			geometry Box {
+				size 0.1 1.2 0.6
+			}
+		}
+	]
+}
+
+ROUTE time_banhxe.fraction_changed TO quay.set_fraction
+ROUTE quay.value_changed TO	banhxe.rotation
+
+

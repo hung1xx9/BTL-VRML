@@ -1,0 +1,24 @@
+#VRML V2.0 utf8
+
+DEF	xemay
+Transform {
+	translation	0 0 0
+	rotation 0 0 1 0
+	children [
+		  Inline {
+			  url ["E:\VRML\BTL ver 2\Phuongtien\Xemay.wrl"]
+		  }
+	]
+}
+DEF	time TimeSensor	{
+	cycleInterval 11
+	loop TRUE
+}
+DEF	chay PositionInterpolator {
+	key	[0,.5, 1]
+	keyValue [-30 0 0,20 0 0, 35 0 0]
+}
+
+ROUTE time.fraction_changed TO chay.set_fraction
+ROUTE chay.value_changed TO	xemay.translation
+

@@ -1,0 +1,118 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 0
+	rotation 0 1 0 1.57
+	children [
+		Group {
+			children [
+				Transform {
+					translation	0 0 0
+					rotation -1 0 0 0.57
+					children [
+						Shape {
+							appearance DEF mau Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+							geometry Box {
+								size 2 1 0.2
+							}
+						}
+						Transform {
+							translation	0 -0.25 0.1
+							rotation 0 0 1 0
+							children [
+								DEF part
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor .36 .36 .36
+											specularColor .94 .94 .94
+											emissiveColor 0 .36 .27
+											ambientIntensity 0
+											shininess .23
+											transparency .584
+										}
+									}
+									geometry Box {
+										size 1.8 0.4 0.1
+									}
+								}
+							]
+						}
+						Transform {
+							translation	0 0.25 0.1
+							rotation 0 0 1 0
+							children [
+								USE	part
+							]
+						}
+				
+					]
+				}
+			]
+		}
+		Transform {
+			translation	0 0 0
+			rotation 0 0 1 0
+			children [
+				DEF	light
+				SpotLight {
+					ambientIntensity 0
+					attenuation	1 0 0
+					beamWidth 1.570796
+					cutOffAngle	0.785398
+					direction 0 1 0
+					intensity 1
+					location 0 0 0
+					on TRUE
+					radius 100
+				}
+				DEF	time
+				TimeSensor {
+					enabled	TRUE
+					cycleInterval 10
+					loop TRUE
+				}
+				DEF colorinter
+				ColorInterpolator {
+					key	[0 0.25 0.75 1]
+					keyValue [1 0 0, 0 1 0, 0 0 1, 1 0 0]
+				}
+			]
+		}
+	]
+}
+Transform {
+	translation	0 -0.4 0
+	rotation 0 1 0 1.57
+	children [
+		Inline {
+			url	["E:\VRML\BTL ver 2\Light\Gia.wrl"]
+		}
+	]
+}
+#Transform {
+#	translation	0 10 0
+#	children [Shape {
+#		appearance Appearance {
+#			material Material{
+#			diffuseColor .69 .13 .33
+#			specularColor .12 .05 .05
+#			ambientIntensity .0933
+#			shininess .07
+#		}
+#		}
+#		geometry Box {
+#			size 2 2 2
+#		}
+#	}]
+#}
+
+ROUTE time.fraction_changed	TO colorinter.set_fraction
+ROUTE colorinter.value_changed TO light.color

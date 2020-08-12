@@ -1,0 +1,144 @@
+#VRML V2.0 utf8
+
+Transform {
+	rotation 0 1 0 0.001
+	children [
+		DEF abc75 Transform	{
+	
+			children [
+				DEF	abc15 Transform	{
+					children [
+						DEF	d1 Transform {
+							children [
+								Transform {
+									translation	12.5 0 0
+									children [
+										Inline {url ["E:\VRML\BTL ver 2\BTL\25m.wrl"]}
+									]
+								}
+							]
+						}
+						Transform {
+							translation	25 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	50 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	75 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	100 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	125 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	150 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	175 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	200 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	225 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	250 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	275 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	300 0 0
+							children [
+								USE	d1
+							]
+						}
+						Transform {
+							translation	325 0 0
+							children [
+								USE	d1
+							]
+						}
+#						Transform {
+#							translation	350 0 0
+#							children [
+#								USE	d1
+#							]
+#						}
+					]
+				}
+#				Transform {
+#					translation	375 0 0
+#					children [
+#						USE	abc15
+#					]
+#				}
+#				Transform {
+#					translation	750 0 0
+#					children [
+#						USE	abc15
+#					]
+#				}
+#						Transform {
+#							translation	1125 0 0
+#							children [
+#								USE	abc15
+#							]
+#						}
+				#		Transform {
+				#			translation	1500 0 0
+				#			children [
+				#				USE	abc15
+				#			]
+				#		}
+			]
+		}
+	]
+}
+
+
+DEF	abc150 Transform {
+	rotation 0 1 0 3.1425
+	children [
+		USE	abc75
+	]
+}
+
+

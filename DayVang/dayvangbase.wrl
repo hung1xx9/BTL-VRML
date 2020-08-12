@@ -1,0 +1,37 @@
+#VRML V2.0 utf8
+
+#DEF	giadayvang
+Transform {
+	translation 20 32 0 
+	rotation 0 1 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 1 0 0
+					specularColor .39 .39 .39
+					ambientIntensity .494
+					shininess .145
+				}
+			}
+			geometry Box {size 4 2 500}
+		}
+	]
+}
+Transform {
+	translation -20 32 0 
+	rotation 0 1 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 1 0 0
+					specularColor .39 .39 .39
+					ambientIntensity .494
+					shininess .145
+				}
+			}
+			geometry Box {size 4 2 500}
+		}
+	]
+}

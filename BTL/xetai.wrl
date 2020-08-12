@@ -1,0 +1,56 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		#thungxe
+		Shape {
+			geometry Box {size 4.4 2 2}
+			appearance Appearance {
+				material Material {
+					diffuseColor .38 .38 .42
+					specularColor .53 .53 .53
+					ambientIntensity .0933
+					shininess .93
+				}
+			}
+		}
+		DEF	dauxe Transform	{
+			translation	2.95 -0.25 0
+			children[
+				Shape {
+					geometry Box {size 1.5 1.5 2}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .36 .8
+							specularColor .5 .5 .5
+							emissiveColor 0 .07 .15
+							ambientIntensity 0
+						}
+					}
+				}
+			]
+		}
+	]
+}
+DEF	banhxe1 Transform {
+	translation	-1 -1.4 1
+	children [
+		Inline {url "E:\VRML\BTL ver 2\BTL\banhxe.wrl"}
+	]
+}
+DEF	banhxe2 Transform {
+	rotation 0 1 0 3.14
+	translation	-2 0 0
+	children USE banhxe1
+}
+DEF	banhxe3 Transform {
+	translation		3 -1.4 1
+	children [
+		Inline {url "E:\VRML\BTL ver 2\BTL\banhxe.wrl"}
+	]
+}
+DEF	banhxe4 Transform {
+	rotation  0 1 0 3.14
+	translation	2 0 0
+	children USE banhxe1
+}
